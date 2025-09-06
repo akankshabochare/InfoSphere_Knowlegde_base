@@ -1,0 +1,38 @@
+.contribute-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.contribute-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contribute-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contribute-form input,
+.contribute-form select,
+.contribute-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contribute-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contribute-form button:hover {
+  background: #0056b3;
+}

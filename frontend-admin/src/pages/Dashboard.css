@@ -1,0 +1,95 @@
+.dashboard {
+  max-width: 1200px;
+}
+
+.contributions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contribution-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.contribution-content {
+  flex: 1;
+}
+
+.contribution-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.contribution-meta {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.activity-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-description {
+  font-size: 0.9rem;
+  color: #374151;
+  margin: 0;
+}
+
+.activity-timestamp {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.quick-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .quick-actions {
+    flex-direction: column;
+  }
+  
+  .contribution-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .activity-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
